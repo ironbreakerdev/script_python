@@ -3,7 +3,7 @@ import requests,shutil,getpass,os,time
 USER = getpass.getuser()
 
 PATH = "/home/"+USER+"/Immagini/"
-API_KEY = ""
+API_KEY = "N5rN0JGBmy7_BFuj4AWp4XnouViuP_7QfgP9IIUTa0Q"
 URL_KEY = "https://api.unsplash.com/photos/random/?client_id="
 OPTION = "&orientation=landscape"
 url_api_key = URL_KEY+API_KEY+OPTION
