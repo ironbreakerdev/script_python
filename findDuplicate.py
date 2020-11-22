@@ -32,14 +32,9 @@ else:
         print(value)
 
     esito = input("\nVuoi eliminare tutti i file che sono duplicati? [s/n]: ")
-    while esito.lower() != 's' or esito.lower() != 'n':
-        if esito.lower() == 's':
-            for file in os.listdir(path): 
+    if esito.lower() == 's': 
+        for file in os.listdir(path): 
                 if file not in dict_file.values():
                     os.remove(path+"/"+file)
-            break
-        elif esito.lower() == 'n':
-            exit()
-        else:
-            print("Attenzione, carattere non riconosciuto")
-            esito = input("\nVuoi eliminare tutti i file che sono duplicati? [s/n]: ")
+    else:
+        exit()
